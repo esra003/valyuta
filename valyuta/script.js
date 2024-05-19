@@ -54,9 +54,9 @@ li3.forEach(item3 => {
 
 
 function myFunction() {
-    // fetch(`https://api.exchangerate.host/latest?${base}&symbols=${symbols}`)
+    fetch(`https://api.exchangerate.host/latest?${base}&symbols=${symbols}`)
     //   fetch(`https://api.com/v6/f042570fb25bb227b790b7fb/latest?/${base}&symbols=${symbols.join}`)
-    fetch(`https://api.currencyapi.com/v3/latest?apikey=${base}&symbols=${symbols.join("%2C")}`)
+    // fetch(`https://api.currencyapi.com/v3/latest?apikey=${base}&symbols=${symbols.join("%2C")}`)
     // fetch(`https://app.exchangerate-api.com/activate/c8c7177a2a83c1e155ab30bc48/latest?apikey=${base}&symbols=${symbols}`)
     // fetch(`https://v6.exchangerate-api.com/v6/f042570fb25bb227b790b7fb/latest/USD`)
     .then(res => res.json())
